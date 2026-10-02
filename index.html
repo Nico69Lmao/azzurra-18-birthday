@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#17141d">
+  <meta name="description" content="Una piccola sorpresa di compleanno, tutta per Azzurra. Con amore, Nico."><title>Per Azzurra, con amore — 18</title>
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient--one" aria-hidden="true"></div><div class="ambient ambient--two" aria-hidden="true"></div><canvas id="confetti" aria-hidden="true"></canvas>
+  <main>
+    <section class="countdown-screen" id="countdown-screen" aria-labelledby="countdown-title"><div class="countdown-card">
+      <p class="eyebrow"><span class="tiny-star">✦</span> una sorpresa per te <span class="tiny-star">✦</span></p><div class="lock-heart" aria-hidden="true"><span>♡</span><i></i></div>
+      <h1 id="countdown-title">Ti ho fatto una<br><em>piccola sorpresa scema</em></h1><p class="countdown-copy">A mezzanotte potrai vedere quello che ti ho preparato</p>
+      <div class="countdown" role="timer" aria-label="Tempo rimanente a mezzanotte"><div class="time-unit"><span id="hours">00</span><small>ore</small></div><b>:</b><div class="time-unit"><span id="minutes">00</span><small>minuti</small></div><b>:</b><div class="time-unit"><span id="seconds">00</span><small>secondi</small></div></div>
+      <div class="countdown-footer"><span class="pulse-dot"></span> per Azzurra, da Nico</div></div></section>
+    <section class="experience" id="experience" hidden>
+      <header class="topbar"><a class="wordmark" href="#" aria-label="Torna all'inizio">N <span>♡</span> A</a><div class="topbar-note">un piccolo viaggio tutto nostro</div><div class="chapter-count" id="chapter-count">01 / 05</div></header>
+      <div class="progress-track"><span id="progress-fill"></span></div>
+      <section class="chapter chapter--greeting is-active" id="chapter-greeting" aria-labelledby="greeting-title"><div class="chapter-inner greeting-inner">
+        <p class="eyebrow">✦ oggi il mondo festeggia te ✦</p><div class="birthday-seal"><span>18</span><small>anni</small></div><p class="script-line">alla mia persona preferita</p>
+        <h1 id="greeting-title">Buon compleanno<br><em>amore!</em></h1><p class="chapter-copy">Diciotto anni di te. E io sono così felice di poter festeggiare questo giorno al tuo fianco, Azzurra.</p>
+        <div class="signature">con tutto il mio amore, <span>Nico</span></div><button class="button button--primary" data-next="quiz">Continua <span>↗</span></button><p class="soft-note">Il bello deve ancora arrivare</p>
+      </div><span class="sparkle sparkle--left">✧</span><span class="sparkle sparkle--right">✦</span></section>
+      <section class="chapter" id="chapter-quiz" aria-labelledby="quiz-heading" hidden><div class="chapter-inner">
+        <p class="eyebrow">02 · un po’ di noi</p><p class="script-line">vediamo quanto ti ricordi...</p><h2 id="quiz-heading">Il nostro <em>quiz</em></h2>
+        <div class="quiz-progress" aria-label="Domanda 1 di 3"><span class="quiz-progress-fill" id="quiz-progress-fill"></span></div>
+        <article class="quiz-card" aria-live="polite"><p class="quiz-number" id="quiz-number">DOMANDA 01 <span>♡</span></p><h3 id="question-text">Quando ci siamo messi insieme ufficialmente?</h3><div class="answer-list" id="answer-list"></div><p class="answer-feedback" id="answer-feedback" role="status"></p></article>
+      </div></section>
+      <section class="chapter" id="chapter-game" aria-labelledby="game-heading" hidden><div class="chapter-inner game-inner">
+        <p class="eyebrow">03 · una piccola pausa gioco</p><p class="script-line">Una master 31 di project sekai</p><h2 id="game-heading">Piano tiles <em>fatto in casa</em></h2>
+        <p class="chapter-copy game-intro">Tocca la nota in fondo per far scendere la prossima dall’alto. La sequenza continua finché non selezioni una nota nella posizione sbagliata.</p>
+        <div class="game-scoreboard" aria-live="polite"><span>Aura <small>x</small><strong id="game-score">0</strong></span></div>
+        <div class="piano-board" id="piano-board" aria-label="Piano Tiles: premi la nota attiva in fondo per continuare"><div class="piano-lanes" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="piano-hit-line"></div><div class="piano-notes" id="piano-notes"></div><p class="piano-idle" id="piano-idle">Premi Inizia per giocare</p><div class="game-over-screen" id="game-over" hidden role="status" aria-live="assertive"><div class="game-over-card"><p class="game-over-kicker">PARTITA TERMINATA</p><h3>Fine della partita</h3><p id="game-over-score">Aura x0</p><button class="button button--primary" id="game-restart" type="button">Gioca ancora <span>↻</span></button><button class="game-over-exit" id="game-over-album" type="button">Vai all’album</button></div></div></div>
+        <p class="game-feedback" id="game-feedback" role="status">Seleziona la nota attiva per far avanzare il piano.</p>
+        <div class="game-actions"><button class="button button--primary" id="game-start">Inizia a giocare</button><button class="skip-game" id="skip-game">Vai all’album →</button></div>
+      </div></section>
+      <section class="chapter" id="chapter-album" aria-labelledby="album-heading" hidden><div class="chapter-inner album-inner">
+        <p class="eyebrow">04 · pagine di noi</p><p class="script-line">i miei ricordi preferiti hanno il tuo sorriso</p><h2 id="album-heading">Noi, <em>nel tempo</em></h2><p class="chapter-copy album-intro">Piccoli frammenti di giornate normali, diventati speciali perché c’eri tu. Tocca una foto per guardarla meglio.</p>
+        <aside class="playlist-card" aria-labelledby="playlist-heading"><div class="playlist-heading-row"><span class="vinyl-icon">♫</span><div><p class="playlist-kicker">la nostra colonna sonora</p><h3 id="playlist-heading">Noi, in <em>riproduzione</em></h3></div></div>
+          <p class="playlist-comment">Anche se le canzoni che non mettevi non erano il mio stile io preferivo ascoltare le tue rispetto alla mia playlist preferita perchè mi sembrava di averti più vicino e di stare diffianco a te. Ti amo cosi tanto.</p>
+          <div class="playlist-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLNKHyUTmqSJU&amp;rel=0" title="Playlist condivisa di Nico e Azzurra su YouTube Music" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen"></iframe></div>
+          <a class="playlist-fallback" href="https://music.youtube.com/playlist?list=PLNKHyUTmqSJU" target="_blank" rel="noopener noreferrer">Apri la playlist su YouTube Music ↗</a>
+        </aside><div class="timeline" id="timeline" aria-label="Album dei nostri ricordi"></div><div class="album-signoff"><span>♡</span><p>E questo è solo l’inizio<br><em>di tutti i ricordi che ci aspettano.</em></p></div><button class="button button--primary" data-next="letter">C’è ancora una cosa ↗</button>
+      </div></section>
+      <section class="chapter" id="chapter-letter" aria-labelledby="letter-heading" hidden><div class="chapter-inner letter-inner"><p class="eyebrow">05 · da leggere con calma</p><p class="script-line">una lettera per i tuoi diciotto</p>
+        <div class="letter-paper"><span class="letter-stamp">♡</span><h2 id="letter-heading">Azzurra <em>mia,</em></h2><p class="letter-intro">Le parole che tenevo nel cuore per te.</p><div class="letter-message">
+          <p>Da quando sei nella mia vita, ogni giornata sembra migliore. Non riesco a spiegarmi come tu faccia a essere così speciale, a partire dal tuo viso così carino e sorridente quando usciamo insieme. Mi fa sorridere vederti timida quando ti bacio e ti stuzzico con dolcezza. Sei la prima persona che mi ha fatto sentire nel posto giusto e amato; non capisco ancora come sia successo tutto così in fretta.</p>
+          <p>Non capisco ancora perché hai scelto me; non riesco a immaginare un tuo singolo difetto, a parte quello di avere ancora come amici i tuoi ex. Ogni volta che ti guardo ti vedo più bella e, ogni volta che mi baci, vorrei che quel momento durasse ancora. Quando condividiamo pensieri più intimi, il mio cuore batte sempre più forte. Tu credi che io sia nonchalant, ma non è per niente così.</p>
+          <p>Quando, una sera, mentre dormivo, ti sei messa a scrivermi quel paragrafetto, al mio risveglio ero felicissimo: significava che mi ami così tanto da restare lì a guardarmi mentre scrivevi i tuoi pensieri e quello che provavi, proprio come facevo io. Non sono molto bravo a esprimermi in italiano o, in generale, a parole, perché nessun libro su di te riuscirà mai a descrivere quanto ti amo e ti adoro come persona.</p>
+          <p>Ti avevo detto che non avrei smesso di scriverti messaggi lunghi e pieni di dettagli anche se fossimo stati insieme, no? Eccoci qui, al tuo diciottesimo. Io che mi faccio cento chilometri per vederti ogni volta, e noi che ci baciamo per ore sulle panchine. Tu sei riuscita a ridefinire per me cos’è l’amore. Hai il viso più bello che abbia mai visto; non c’è nessuna ragazza che potrebbe mai farti concorrenza.</p>
+          <p>Avevo sempre sognato che la persona al mio fianco scegliesse di passare il suo tempo con me: non riesco a immaginare una giornata senza di te. Sai cosa stavo facendo mentre eravamo in chiamata? Stavo programmando questo sito. Non sono bravissimo in tutto, ma ho usato quello che so di informatica per creare il sito più bello possibile per te. Solo per la grafica ci ho messo tre giorni. Sei davvero la persona più importante della mia vita.</p>
+          <p>La mia testa è ancora ferma a quei due giorni passati insieme: ai tuoi sorrisi e al modo in cui scherzavamo. Da quando ci sei tu, non sento il bisogno di nessun altro: mi completi come nessun’altra persona. Anche se ho avuto altre storie, nessuna si avvicina a quello che mi hai fatto provare; attraverserei il mare a nuoto solo per incontrarti. Mi migliori come persona e mi dai tanti motivi per guardare avanti.</p>
+          <p>Per qualsiasi cosa di cui tu abbia bisogno, io ci sarò. Goditi questo compleanno e non pensare di dover affrontare tutto da sola: finché sarò al tuo fianco, farò del mio meglio per starti vicino, ascoltarti e rendere le tue giornate più serene. Voglio custodire quello che siamo con rispetto e amore, e fare in modo che tu ti senta sempre amata e al sicuro con me.</p>
+          <p>Sono così felice che tu sia la mia ragazza e lo dico sul serio quando dico che voglio che tu sia la donna della mia vita, costi quel che costi. A volte possiamo farci soffrire senza volerlo, ma amarsi significa anche saper perdonare quando si può. Io sono qui per restare, parlare con te con sincerità e non lasciarti mai sola. Spero che in questi anni ci avvicineremo sempre di più e magari riuscirò a diventare simpatico anche ai tuoi genitori.</p>
+          <p>Sorridi, amore: ci sono io, accanto a te. Ti amo, ora e per sempre.</p>
+        </div></div><p class="final-note">Buon diciottesimo, amore mio.<br><em>Ti sceglierei, ogni volta.</em></p><button class="restart-button" id="restart-button">Rivedi il nostro viaggio ↻</button>
+      </div></section>
+      <footer class="site-footer"><span>fatto con amore</span><span>♡</span><span>da Nico, per Azzurra</span></footer>
+    </section>
+  </main>
+  <dialog class="photo-dialog" id="photo-dialog" aria-label="Foto del nostro album"><button class="dialog-close" type="button" aria-label="Chiudi la foto">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
+</body>
+</html>
